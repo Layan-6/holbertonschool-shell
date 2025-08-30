@@ -1,2 +1,3 @@
 #!/bin/bash
+# Change the owner of the file 'hello' to user 'betty'
 chown betty hello
