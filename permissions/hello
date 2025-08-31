@@ -1,0 +1,11 @@
+#!/bin/bash
+
+if [ ! -f "hello" ]; then
+    echo "Error: File 'hello' not found" >&2
+    exit 1
+fi
+
+
+if ! getent group school >/dev/null 2>&1; then
+    sudo groupadd scho
+sudo chgrp school hello
