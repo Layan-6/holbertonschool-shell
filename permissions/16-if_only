@@ -1,4 +1,13 @@
 #!/bin/bash
-if [ "$(stat -c '%U' hello)" = "guillaume" ]; then
-    chown vincent hello
+
+for i in {0..4}
+do
+    echo "Check $i"
+done
+
+if [ -f "hello" ]; then
+    echo "Changing ownership to guillaume..."
+    sudo chown guillaume hello
+else
+    echo "File 'hello' not found!"
 fi
