@@ -1,2 +1,3 @@
 #!/bin/bash
+# Change owner to vincent and group to staff for all files and directories
 chown -R vincent:staff .
